@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #head {
+            height: 350px;
+            width: 250px;
+            border: black;
+            background-color: lightgray;
+            /*text-align: center;*/
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+
+        .operation {
+/*            margin-bottom: 5px;*/
+            align-items: center;
+            margin-top: 10px;
+            padding-bottom: 5px;
+            height: 25px;
+            width: 150px;
+            background-color: blue;
+        }
+        .takeinput{
+            width: 250px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <form action="Calculator">
+            <table id="head">
+                <tr>
+                    <td>Enter First Number
+                        <br>
+                <center><input class="takeinput" type="text" name="n1" required= /></center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Enter Second Number <br>
+                <center> <input class="takeinput" type="text" name="n2" required= /></center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center>
+                            <input class="operation" style="background-color: lightblue" type="submit" value="Addition"
+                                name="Addition" />
+                            <br>
+                            <input class="operation" style="background-color: lightblue" type="submit"
+                                value="Subtraction" name="Subtraction" />
+                            <br>
+                            <input class="operation" style="background-color: lightblue" type="submit"
+                                value="Multiplaction" name="Multiplaction" />
+                            <br>
+                            <input class="operation" style="background-color: lightblue" type="submit" value="Division"
+                                name="Division" />
+                            <br>
+                            <input class="operation" style="background-color: lightblue" type="submit" value="Modulas"
+                                name="Modulas" />
+                            <br>
+                            <input class="operation" style="background-color: lightgreen" type="reset" value="Clear" />
+                        </center>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>NewServlet</servlet-name>
+        <servlet-class>NewServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Power</servlet-name>
+        <servlet-class>Power</servlet-class>
+    </servlet>
+     <servlet>
+        <servlet-name>OneOprand</servlet-name>
+        <servlet-class>OneOprand</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>NewServlet</servlet-name>
+        <url-pattern>/NewServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Power</servlet-name>
+        <url-pattern>/Power</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>OneOprand</servlet-name>
+        <url-pattern>/OneOprand</url-pattern>
+    </servlet-mapping>
+   
+</servlet-mapping>
+</web-app>

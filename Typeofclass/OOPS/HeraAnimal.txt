@@ -1,0 +1,60 @@
+import java.util.Scanner;
+class Animal
+{
+  int age,height;
+  String  breed,colour;
+  public Animal(int age,int height,String breed,String colour)
+  {
+       this.age=age;
+       this.height=height;
+       this.breed=breed;
+       this.colour=colour;
+  }
+  public void display()
+  {
+       System.out.println("Age\t\t:\t"+this.age);
+       System.out.println("Height\t\t:\t"+this.height)
+       System.out.println("breed\t\t:\t"+this.breed);
+       System.out.println("Colour\t\t:\t"+this.colour);
+  }
+  
+}
+class Dog extends Animal
+{
+      String d_name,d_sound;
+      public Dog(int age,int height,String breed,String colour,String d_name,String d_sound)
+      {
+          super(age,height,breed,colour);
+          this.d_name=d_name;
+          this.d_sound=d_sound;
+      }
+      public void display()
+      {
+          System.out.println("Dog Name\t\t:\t"+ob.d_name);
+          System.out.println("Dog sound\t\t:\t"+ob.d_sound);
+      }
+}
+class Cat extends Animal
+{
+     String c_name,c_sound;
+     public Cat(int age,int height,String breed,String colour,String d_name,String d_sound,String c_name,String c_sound)
+     {
+          super(age,height,breed,colour,d_name,d_sound);
+          this.c_name=c_name;
+          this.c_sound=c_sound;
+     }
+}
+class Test
+{
+    public static void main(String args[])
+    {
+        Animal ref;
+        Animal ob1=new Animal(10,5,"breed","black");
+        Dog ob2=new Dog(10,5,"breed","black","dogName","Bhow Bhow");
+        Cat ob3=new Cat(10,5,"breed","black","dogName","Bhow Bhow","catName","Meow Meow");
+        
+        
+        
+    }
+
+}
