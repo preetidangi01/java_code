@@ -32,6 +32,46 @@
         <servlet-name>Calculator</servlet-name>
         <servlet-class>Calculator</servlet-class>
     </servlet>
+    <!--    <servlet>
+        <servlet-name>RegistrationData</servlet-name>
+        <servlet-class>RegistrationData</servlet-class>
+    </servlet>-->
+    <servlet>
+        <servlet-name>SDashboard</servlet-name>
+        <servlet-class>SDashboard</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegistrationData</servlet-name>
+        <servlet-class>RegistrationData</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginData</servlet-name>
+        <servlet-class>LoginData</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>Login</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Profile</servlet-name>
+        <servlet-class>Profile</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>Logout</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UpdateData</servlet-name>
+        <servlet-class>UpdateData</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Registration</servlet-name>
+        <servlet-class>Registration</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Welcome</servlet-name>
+        <servlet-class>Welcome</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Palindrome</servlet-name>
         <url-pattern>/Palindrome</url-pattern>
@@ -64,4 +104,47 @@
         <servlet-name>OneOprand</servlet-name>
         <url-pattern>/OneOprand</url-pattern>
     </servlet-mapping>
+    <!--    <servlet-mapping>
+        <servlet-name>RegistrationData</servlet-name>
+        <url-pattern>/RegistrationData</url-pattern>
+    </servlet-mapping>-->
+    <servlet-mapping>
+        <servlet-name>SDashboard</servlet-name>
+        <url-pattern>/SDashboard</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegistrationData</servlet-name>
+        <url-pattern>/RegistrationData</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LoginData</servlet-name>
+        <url-pattern>/LoginData</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Profile</servlet-name>
+        <url-pattern>/Profile</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UpdateData</servlet-name>
+        <url-pattern>/UpdateData</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Registration</servlet-name>
+        <url-pattern>/Registration</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Welcome</servlet-name>
+        <url-pattern>/Welcome</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>Welcome</welcome-file>
+    </welcome-file-list>
 </web-app>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #main {
+                /* background-color: lightsalmon; */
+                height: 500px;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            #main form {
+                background-color: lightgrey;
+                display: flex;
+                flex-direction: column;
+                /* align-items: center; */
+                border: 2px solid;
+                /* justify-content: center; */
+                height: 450px;
+                border-radius: 15px;
+                width: 30%;
+            }
+
+            form span {
+                /* background-color: aliceblue; */
+                height: 30px;
+                /* border: 1px solid; */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
+
+            form span input {
+                /* background-color: aliceblue; */
+                margin-top: 10px;
+                height: 30px;
+                /* border: 1px solid; */
+                width: 80%;
+                margin-top: 5px;
+                padding: 1px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="main">
+            <form action="RegistrationData">
+                <center><h1>Registration Form</h1> </center>
+
+
+                <span>Name</span>
+                <span><input type="text" name="Name" required></span>
+
+                <span>Father Name</span>
+                <span><input type="text" name="FName" required></span>
+
+                <span>Email Id</span>
+                <span><input type="text" name="email" required></span>
+
+                <span>Password </span>
+                <span><input type="password" name="password" required></span>
+
+                <span>Conform Password </span>
+                <span><input type="password" name="cpassword" required></span>
+
+                <span>Contact </span>
+                <span><input type="text" name="contact" required></span>
+
+                <span> </span>
+                <span><input type="submit" name="login" value="Registration"></span>
+
+                <span><a href="Login.html">Login</a></span>
+            </form>
+    </body>
+
+</html>

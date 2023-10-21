@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Profle</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: candara;
+      }
+      .main {
+        margin-top: 10px;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .profile-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 600px;
+        width: 80%;
+        border-radius: 30px;
+        padding: 30px;
+        border: 1px solid #ffffff40;
+        background-color: lightskyblue;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+      }
+      .image {
+        position: relative;
+        height: 150px;
+        width: 150px;
+      }
+      .image .profile-pic {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+      }
+      form {
+        width: 100%;
+        position: relative;
+      }
+      table {
+        position: absolute;
+        margin-top: 30px;
+        width: 100%;
+      }
+      table tr {
+        /* width: 100%; */
+        display: flex;
+        /* flex-direction: row; */
+      }
+      table tr td {
+        font-size: 18px;
+        width: 100%;
+        height: 35px;
+        color: black;
+        display: flex;
+        flex-direction: row;
+        /* background-color: yellow; */
+      }
+
+      table tr td a {
+        font-size: 18px;
+        width: 40%;
+        height: 35px;
+        color: black;
+        text-decoration: none;
+      }
+      table tr td a:hover {
+        color: grey;
+      }
+      input {
+        width: 70%;
+        height: 30px;
+        font-size: 15px;
+        border-radius: 10px;
+        border: 1px solid ghostwhite;
+      }
+      input:hover {
+        background-color: whitesmoke;
+      }
+      #editToggle {
+        display: none;
+      }
+      /* -------------------------------------------- */
+      input[type="checkbox"] {
+        display: none;
+      }
+
+      input[type="checkbox"]:checked + input[type="text"] {
+        pointer-events: auto;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        color: #333;
+      }
+
+      button {
+        display: none;
+      }
+      table tr td label{
+        background-color: whitesmoke;
+        border-radius: 10px;
+        width: 40px;
+        height: 20px;
+      }
+      table tr td label:hover {
+        background-color: lightblue;
+      }
+      input[type="checkbox"]:checked + input[type="text"] + button {
+        display: inline-block;
+      }
+      /* ---------------------------------------- */
+    </style>
+  </head>
+  <body>
+    <section class="main">
+      <div class="profile-card">
+        <!-- <div class="image">
+          <img src="images/profile.jpg" alt="" class="profile-pic" />
+        </div> -->
+        <div class="data">
+          <br />
+          <br />
+           <h2>PROFILE</h2> 
+        </div>
+
+        <form action="">
+          <table>
+            <tr>
+              <td>
+                <span>Name : </span>
+              </td>
+              <td>
+                <span>444</span>
+              </td>
+              <td>
+                <label for="editToggle1">Edit</label>
+              </td>
+              <td class="save_btn">
+                <input type="checkbox" id="editToggle1" />
+                <input type="text" id="editableField1" />
+                <button id="saveButton1">Save</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>Father :</span>
+              </td>
+              <td>
+                <span>9000</span>
+              </td>
+              <td>
+                <label for="editToggle2">Edit</label>
+              </td>
+              <td class="save_btn">
+                <input type="checkbox" id="editToggle2" />
+                <input type="text" id="editableField2" />
+                <button id="saveButton2">Save</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>Gmail : </span>
+              </td>
+              <td>
+                <span>444</span>
+              </td>
+              <td>
+                <label for="editToggle3">Edit</label>
+              </td>
+              <td class="save_btn">
+                <input type="checkbox" id="editToggle3" />
+                <input type="text" id="editableField3" />
+                <button id="saveButton3">Save</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>Mobile : </span>
+              </td>
+              <td>
+                <span>344</span>
+              </td>
+              <td>
+                <label for="editToggle4">Edit</label>
+              </td>
+              <td class="save_btn">
+                <input type="checkbox" id="editToggle4" />
+                <input type="text" id="editableField4" />
+                <button id="saveButton4">Save</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Change Password :</td>
+              <td></td>
+              <td class="save_btn">
+                <label for="editToggle5">Edit</label>
+              </td>
+              <td>
+                <input type="checkbox" id="editToggle5" />
+                <input type="text" id="editableField5" />
+                <button id="saveButton5">Save</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#" class="btn">Home</a>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

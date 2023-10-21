@@ -1,0 +1,26 @@
+<script>
+    document.write("Preeti <br>");
+    let a=153;
+    let b=a;
+    let count=0;
+    let sum=1;
+    while(b>0){
+        b=b/10;
+        count++;
+    }
+    b=a;
+    for(let i=1;b>0;i++){
+        let rem=b%10;
+        b=b/10;
+        for(let j=1;j<=count;j++){
+            sum=rem*sum;
+        }
+
+    }
+    if(sum==a){
+        document.write("Armstrome");
+    }
+    else{
+        document.write("Not Armstrome");
+    }
+</script>

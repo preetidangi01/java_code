@@ -21,11 +21,14 @@ public class OneOprand extends HttpServlet {
         try (PrintWriter out = res.getWriter()) {
             try {
                 int n = Integer.parseInt(req.getParameter("n"));
-                if(req.getParameter("CheckAge")!=null){
+                if (req.getParameter("CheckAge") != null) {
                     out.println(checkAge(n));
-                }
-                else if(req.getParameter("CheckEvenOdd")!=null){
-                    out.println( checkEvenOdd(n));
+                } else if (req.getParameter("CheckEvenOdd") != null) {
+                    out.println(checkEvenOdd(n));
+                } else if (req.getParameter("checkPrime") != null) {
+                    out.println(checkPrime(n));
+                } else if (req.getParameter("checkSeries") != null) {
+                    out.println(checkSeries(n));
                 }
             } catch (NumberFormatException e) {
                 out.println("Invalide Input");
@@ -51,11 +54,49 @@ public class OneOprand extends HttpServlet {
 
     public String checkEvenOdd(int n) {
         if (n % 2 == 0) {
-            return "Even Number";
+            return "Number is Even";
         } else {
-            return "Odd Number";
+            return "Number is Odd ";
         }
     }
+
+    public String checkPrime(int n) {
+        int count = 0;
+        for (int i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                count++;
+            }
+        }
+        if (count == 2) {
+            return "It is a prime number";
+        } else {
+            return "Not a prime number";
+        }
+    }
+    public String checkSeries(int n){
+		int fact=1,sum=0,i=1,x=1;
+		for(i=1;i<=n;i++)
+		{
+			fact=1;
+			for(int j=1;j<=x;j++)
+			{
+				fact=fact*j;
+			}
+			if(i%2==0)
+			{
+			sum=sum-fact;
+			}else
+			{
+				sum=sum+fact;
+			}
+			x=x+2;
+		}
+		
+		System.out.println(sum);
+        return null;
+	}
+
+    
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
